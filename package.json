@@ -1,0 +1,22 @@
+{
+  "name": "sorrentino-luglio-mondiali",
+  "version": "1.0.0",
+  "description": "infrmazioni sul mondiale di calcio",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elisasorrentino/sorrentino-luglio-mondiali.git"
+  },
+  "author": "elisa sorrentino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elisasorrentino/sorrentino-luglio-mondiali/issues"
+  },
+  "homepage": "https://github.com/elisasorrentino/sorrentino-luglio-mondiali#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
