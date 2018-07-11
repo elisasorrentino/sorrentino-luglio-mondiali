@@ -39,10 +39,11 @@ paths:
       summary: aggiungere team
       parameters:
         - name: Team
-          in: query
+          in: body
           description: add a team
           required: true
-          type: string
+          schema: 
+            $ref: '#/definitions/Team'
       produces: 
         - appication/json 
       responses:
@@ -70,4 +71,22 @@ definitions:
         description: se true la squadra è ancora in corso per la vittoria, se false è uscita dal mondiale    
       matches:
         type: array
+        items:
+          $ref: '#/definitions/Match'
         description: partite
+  Match:
+    type: object
+    properties:
+      opponent:
+        type: string
+      outcome:
+        type: string
+    required:
+      - question
+      - choices
+    example:
+      question: Risultato?
+      choices:
+        - W
+        - D
+        - L
