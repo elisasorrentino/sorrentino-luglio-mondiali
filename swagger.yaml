@@ -82,10 +82,11 @@ definitions:
       outcome:
         type: string
     required:
-      - question
-      - choices
+      - opponent
+      - outcome
     example:
-      question: Risultato?
+      opponent: Croazia
+      outcome:
       choices:
         - W
         - D
