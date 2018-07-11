@@ -26,11 +26,19 @@ paths:
           description: id del team che stiamo cercando
           required: false
           type: integer
+      produces:
+        - application/json
       responses:
         200:
-          description: area response
+          description: risposta
           schema:
             type: string
+          examples:
+            application/json: |
+                id: 123
+                name: 'Croazia'
+                is_Still_in: true
+                matches: [[opponent: Russia], [W]]
         400:
           description: unexpected error
     post:
