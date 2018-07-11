@@ -33,3 +33,41 @@ paths:
             type: string
         400:
           description: unexpected error
+    post:
+      description: | 
+        crea un nuovo team
+      summary: aggiungere team
+      parameters:
+        - name: Team
+          in: query
+          description: add a team
+          required: true
+          type: string
+      produces: 
+        - appication/json 
+      responses:
+        200:
+          description: risposta
+          schema:
+            type: string
+        400:
+          description: unexpected error
+        
+
+
+definitions:
+  Team:
+    type: object
+    properties:
+      id:
+        type: integer
+        description: id team
+      name:
+        type: string
+        description: name team
+      is_still_in:
+        type: boolean
+        description: se true la squadra è ancora in corso per la vittoria, se false è uscita dal mondiale    
+      matches:
+        type: array
+        description: partite
